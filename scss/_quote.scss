@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+    .quote {
+        padding: 20px;
+        & h3 {
+            @include h3;
+            text-align: center;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .quote {
+        padding: 88px;
+        & h3 {
+            @include h3;
+            text-align: center;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .quote {
+        padding: 88px;
+        & h3 {
+            @include h3;
+            text-align: center;
+        }
+    }
+}

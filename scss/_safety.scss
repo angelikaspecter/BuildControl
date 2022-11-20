@@ -1,0 +1,150 @@
+@media (max-width: 767px) {
+    .safety {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .safety-title {
+            @include h2;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: -18px;
+                right: -30px;
+                width: 35px;
+                height: 30px;
+                background: url("../img/safety.svg") no-repeat 50% 50%;
+                background-size: contain;
+            }
+        }
+        & .text {
+            @include text;
+            padding: 0;
+        }
+        & .alert {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: var(--dark-color);
+            background: #f6f8f9;
+            border: none;
+            border-radius: 5px;
+            & img {
+                margin-bottom: 20px;
+            }
+            .btn {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .safety {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .safety-title {
+            @include h2;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: -18px;
+                right: -30px;
+                width: 35px;
+                height: 30px;
+                background: url("../img/safety.svg") no-repeat 50% 50%;
+                background-size: contain;
+            }
+        }
+        & .text {
+            @include text;
+            padding: 0;
+        }
+        & .alert {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: var(--dark-color);
+            background: #f6f8f9;
+            border: none;
+            border-radius: 5px;
+            & img {
+                margin-bottom: 20px;
+            }
+            .btn {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .safety {
+        padding: 88px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .safety-title {
+            @include h2;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: -18px;
+                right: -30px;
+                width: 35px;
+                height: 30px;
+                background: url("../img/safety.svg") no-repeat 50% 50%;
+                background-size: contain;
+            }
+        }
+        & .text {
+            @include text;
+            padding: 0 200px;
+            text-align: center;
+        }
+        & .alert {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: var(--dark-color);
+            background: #f6f8f9;
+            border: none;
+            border-radius: 5px;
+            .btn {
+                font-size: 14px;
+            }
+        }
+    }
+}

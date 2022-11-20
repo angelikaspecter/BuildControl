@@ -1,0 +1,131 @@
+@media (max-width: 767px) {
+    .delivery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            text-align: center;
+            padding: 0;
+            & .btn {
+                font-size: 14px;
+            }
+            &:last-child {
+                font-size: 14px;
+            }
+        }
+        & .delivery-list {
+            width: 100%;
+            & .card {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                border: none;
+                .card-body {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    .card-title {
+                        @include h3;
+                    }
+                    .card-text {
+                        @include text;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .delivery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            text-align: center;
+            padding: 0;
+            & .btn {
+                font-size: 14px;
+            }
+            &:last-child {
+                font-size: 14px;
+            }
+        }
+        & .delivery-list {
+            width: 100%;
+            margin: 10px 0;
+            & .card {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                border: none;
+                .card-body {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    .card-title {
+                        @include h3;
+                    }
+                    .card-text {
+                        @include text;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .delivery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 88px 0;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            text-align: center;
+            padding: 0 200px;
+            & .btn {
+                font-size: 14px;
+            }
+            &:last-child {
+                font-size: 14px;
+            }
+        }
+        & .delivery-list {
+            width: 100%;
+            margin: 30px 0;
+            & .card {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                border: none;
+                .card-body {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    .card-title {
+                        @include h3;
+                    }
+                    .card-text {
+                        @include text;
+                    }
+                }
+            }
+        }
+    }
+}

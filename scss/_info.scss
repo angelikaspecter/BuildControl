@@ -1,0 +1,739 @@
+@media (max-width: 767px) {
+    .info-frst {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            text-align: center;
+        }
+        & img {
+            width: auto;
+            height: 150px;
+        }
+    }
+    .info-scnd {
+        padding: 20px;
+        .card {
+            border: none;
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                & .card-title {
+                    @include h2;
+                    text-align: center;
+                }
+                & .text {
+                    @include text;
+                    text-align: center;
+                }
+                & .btn {
+                    &.btn-warning {
+                        width: 100%;
+                    }
+                }
+            }
+            & img {
+                width: 100%;
+                height: 400px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .info-thrd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        & h2 {
+            @include h3;
+        }
+        & .text {
+            @include text;
+            padding: 0;
+            text-align: center;
+        }
+        & .info-list {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            .info-list-item {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                & .card {
+                    width: 100%;
+                    border: none;
+                    & img {
+                        width: 100%;
+                        height: 272px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 100%;
+                        width: 100%;
+                        padding: 0;
+                        .card-title {
+                            @include h3;
+                            text-align: center;
+                        }
+                        .card-text {
+                            @include text;
+                            text-align: center;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info-frth {
+        padding: 20px;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            padding: 0;
+            text-align: center;
+        }
+        ol {
+            list-style-type: none;
+            counter-reset: my-counter;
+            margin: 0;
+            margin-left: 20px;
+            & li {
+                padding: 0;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                &::before {
+                    content: counter(my-counter) "";
+                    counter-increment: my-counter;
+                    position: absolute;
+                    left: -60px;
+                    font-family: var(--font-family);
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: var(--middle-color);
+                    border: 1px solid var(--light-color-2);
+                    box-sizing: border-box;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & h3 {
+                    @include h3;
+                }
+                & .text {
+                    @include text;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+        }
+        .info-btn-group {
+            & .btn {
+                width: 100%;
+                height: 50px;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .info-fvth {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            padding: 0;
+            text-align: center;
+        }
+        & .card {
+            width: 100%;
+            padding: 0;
+            border: none;
+            .card-body {
+                width: 100%;
+                & .about-list {
+                    width: 100%;
+                    & .card {
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        border: none;
+                        .card-body {
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                            .card-title {
+                                @include h3;
+                            }
+                            .card-text {
+                                @include text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & figure {
+            margin: 0;
+            width: 100%;
+            padding: 20px;
+            background: #f6f8f9;
+            border-radius: 5px;
+            text-align: left;
+            & .blockquote {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 50px;
+                    background: url("../img/quote.webp") no-repeat 50% 50%;
+                    background-size: contain;
+                    z-index: 0;
+                }
+                & p {
+                    position: relative;
+                    @include text;
+                    z-index: 99;
+                }
+            }
+            & figcaption {
+                display: flex;
+                & img {
+                    margin-right: 10px;
+                }
+                & cite {
+                    @include text;
+                    color: var(--dark-color);
+                }
+                & p {
+                    @include text;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .info-frst {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            text-align: center;
+        }
+        & img {
+            width: auto;
+            height: 304px;
+        }
+    }
+    .info-scnd {
+        padding: 50px 0;
+        .card {
+            border: none;
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                & .card-title {
+                    @include h2;
+                }
+                & .text {
+                    @include text;
+                }
+                & .btn {
+                    &.btn-warning {
+                        width: 250px;
+                    }
+                }
+            }
+            & img {
+                width: 100%;
+                height: 400px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .info-thrd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        & h2 {
+            @include h3;
+        }
+        & .text {
+            @include text;
+            padding: 0;
+            text-align: center;
+        }
+        & .info-list {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            .info-list-item {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                & .card {
+                    width: 100%;
+                    border: none;
+                    & img {
+                        width: 100%;
+                        height: 272px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 100%;
+                        width: 100%;
+                        padding: 0;
+                        .card-title {
+                            @include h3;
+                        }
+                        .card-text {
+                            @include text;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info-frth {
+        padding: 50px 0;
+        & h2 {
+            @include h2;
+        }
+        & .text {
+            @include text;
+            padding: 0;
+        }
+        ol {
+            list-style-type: none;
+            counter-reset: my-counter;
+            margin: 0;
+            margin-left: 20px;
+            & li {
+                padding: 0;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                &::before {
+                    content: counter(my-counter) "";
+                    counter-increment: my-counter;
+                    position: absolute;
+                    left: -60px;
+                    font-family: var(--font-family);
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: var(--middle-color);
+                    border: 1px solid var(--light-color-2);
+                    box-sizing: border-box;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & h3 {
+                    @include h3;
+                }
+                & .text {
+                    @include text;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+        }
+        .info-btn-group {
+            & .btn {
+                width: 100%;
+                height: 50px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-right: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .info-fvth {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            padding: 0;
+            text-align: center;
+        }
+        & .card {
+            width: 100%;
+            padding: 0;
+            border: none;
+            .card-body {
+                width: 100%;
+                & .about-list {
+                    width: 100%;
+                    & .card {
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        border: none;
+                        .card-body {
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                            .card-title {
+                                @include h3;
+                            }
+                            .card-text {
+                                @include text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & figure {
+            margin: 0;
+            padding: 40px;
+            width: 100%;
+            background: #f6f8f9;
+            border-radius: 5px;
+            text-align: left;
+            & .blockquote {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 50px;
+                    background: url("../img/quote.webp") no-repeat 50% 50%;
+                    background-size: contain;
+                    z-index: 0;
+                }
+                & p {
+                    position: relative;
+                    @include text;
+                    z-index: 99;
+                }
+            }
+            & figcaption {
+                display: flex;
+                & img {
+                    margin-right: 10px;
+                }
+                & cite {
+                    @include text;
+                    color: var(--dark-color);
+                }
+                & p {
+                    @include text;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .info-frst {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 88px 0;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            padding: 0 200px;
+            text-align: center;
+        }
+        & img {
+            width: auto;
+            height: 304px;
+        }
+    }
+    .info-scnd {
+        padding: 88px 0;
+        .card {
+            border: none;
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                & .card-title {
+                    @include h2;
+                }
+                & .text {
+                    @include text;
+                }
+                & .btn {
+                    &.btn-warning {
+                        width: 250px;
+                    }
+                }
+            }
+            & img {
+                width: 100%;
+                height: 400px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .info-thrd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 88px 0;
+        & h2 {
+            @include h3;
+        }
+        & .text {
+            @include text;
+            padding: 0 200px;
+            text-align: center;
+        }
+        & .info-list {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            .info-list-item {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                & .card {
+                    width: 100%;
+                    border: none;
+                    & img {
+                        width: 100%;
+                        height: 272px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 100%;
+                        width: 100%;
+                        padding: 0;
+                        .card-title {
+                            @include h3;
+                        }
+                        .card-text {
+                            @include text;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info-frth {
+        padding: 88px 0;
+        & h2 {
+            @include h2;
+        }
+        & .text {
+            @include text;
+            padding: 0;
+        }
+        ol {
+            list-style-type: none;
+            counter-reset: my-counter;
+            margin: 0;
+            margin-left: 20px;
+            & li {
+                padding: 0;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                &::before {
+                    content: counter(my-counter) "";
+                    counter-increment: my-counter;
+                    position: absolute;
+                    left: -60px;
+                    font-family: var(--font-family);
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: var(--middle-color);
+                    border: 1px solid var(--light-color-2);
+                    box-sizing: border-box;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & h3 {
+                    @include h3;
+                }
+                & .text {
+                    @include text;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+        }
+        .info-btn-group {
+            & .btn {
+                width: 175px;
+                height: 50px;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .info-fvth {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 88px 0;
+        & h2 {
+            @include h2;
+            text-align: center;
+        }
+        & .text {
+            @include text;
+            padding: 0;
+            text-align: center;
+        }
+        & .card {
+            width: 100%;
+            padding: 0;
+            border: none;
+            .card-body {
+                width: 100%;
+                & .about-list {
+                    width: 100%;
+                    & .card {
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        border: none;
+                        .card-body {
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                            .card-title {
+                                @include h3;
+                            }
+                            .card-text {
+                                @include text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & figure {
+            margin: 0;
+            width: 100%;
+            padding: 60px;
+            background: #f6f8f9;
+            border-radius: 5px;
+            text-align: left;
+            & .blockquote {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 50px;
+                    background: url("../img/quote.webp") no-repeat 50% 50%;
+                    background-size: contain;
+                    z-index: 0;
+                }
+                & p {
+                    position: relative;
+                    @include text;
+                    z-index: 99;
+                }
+            }
+            & figcaption {
+                display: flex;
+                & img {
+                    margin-right: 10px;
+                }
+                & cite {
+                    @include text;
+                    color: var(--dark-color);
+                }
+                & p {
+                    @include text;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

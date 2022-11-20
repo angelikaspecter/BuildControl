@@ -1,0 +1,107 @@
+:root {
+	--font-family: "Inter";
+	--dark-color: #212b31;
+	--middle-color: #55585a;
+	--light-color-3: #eef2f3;
+	--light-color-2: #dadedf;
+	--light-color: #ffffff;
+	--accent-color: #036fc7;
+}
+
+@import "_outline";
+@import "_visually-hidden";
+@import "_mixins";
+@import "_header";
+@import "_promo";
+@import "_features";
+@import "_info";
+@import "_quote";
+@import "_company";
+@import "_delivery";
+@import "_safety";
+@import "_lead";
+@import "_about-list";
+@import "_ads";
+@import "_footer";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-weight: 400;
+	scrollbar-width: thin;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	font-family: var(--font-family);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	border-radius: 4px;
+	&.btn-dark {
+		background: var(--dark-color);
+		color: var(--light-color);
+		border: 1px solid var(--dark-color);
+		box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+		&:hover {
+			background: var(--light-color);
+			color: var(--dark-color);
+			border: 1px solid var(--light-color-2);
+		}
+	}
+	&.btn-outline-dark {
+		background: var(--light-color);
+		color: var(--dark-color);
+		border: 1px solid var(--light-color-2);
+		&:hover {
+			background: var(--dark-color);
+			color: var(--light-color);
+			border: 1px solid var(--dark-color);
+			box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+		}
+	}
+	&.btn-light {
+		background: var(--light-color);
+		border: 1px solid var(--light-color-2);
+		box-sizing: border-box;
+		border-radius: 4px;
+		&:hover {
+			background: var(--dark-color);
+			color: var(--light-color);
+			border: 1px solid var(--dark-color);
+			box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+		}
+	}
+	&.btn-warning {
+		font-size: 20px;
+		line-height: 0;
+		padding: 0;
+		padding-top: 10px;
+		background: transparent;
+		border: none;
+		border-radius: 0 !important;
+		border-bottom: 15px solid #ffd042;
+		color: var(--dark-color);
+	}
+	&.btn-sm {
+		white-space: nowrap;
+		font-size: 14px;
+	}
+}
+
+.blockquote,
+.text-secondary {
+	color: var(--dark-color) !important;
+}

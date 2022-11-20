@@ -1,0 +1,157 @@
+@media (max-width: 767px) {
+    footer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        .footer-info {
+            margin: 0;
+            ul {
+                padding: 0;
+                list-style: none;
+                & .footer-logo {
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                & .address {
+                    @include text;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                & .links {
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    & a {
+                        @include text;
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
+                & .social-link {
+                    text-align: center;
+                }
+            }
+            .footer-info-item {
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                & .nav {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .copyright {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top: 1px solid var(--light-color-2);
+            & p {
+                @include text;
+                text-align: center;
+            }
+            & a {
+                @include text;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    footer {
+        padding: 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        .footer-info {
+            margin: 0;
+            ul {
+                padding: 0;
+                list-style: none;
+                & .footer-logo {
+                    margin-bottom: 20px;
+                }
+                & .address {
+                    @include text;
+                    margin-bottom: 10px;
+                }
+                & .links {
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    & a {
+                        @include text;
+                        margin: 0;
+                    }
+                }
+            }
+            .footer-info-item {
+                & .nav {
+                    margin-bottom: 100px;
+                }
+            }
+        }
+        .copyright {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid var(--light-color-2);
+            & p {
+                @include text;
+            }
+            & a {
+                @include text;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    footer {
+        padding: 88px 0 0;
+        display: flex;
+        flex-direction: column;
+        .footer-info {
+            margin: 0;
+            ul {
+                padding: 0;
+                list-style: none;
+                & .footer-logo {
+                    margin-bottom: 20px;
+                }
+                & .address {
+                    @include text;
+                    margin-bottom: 10px;
+                }
+                & .links {
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    & a {
+                        @include text;
+                        margin: 0;
+                    }
+                }
+            }
+            .footer-info-item {
+                & .nav {
+                    margin-bottom: 160px;
+                }
+            }
+        }
+        .copyright {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid var(--light-color-2);
+            & p {
+                @include text;
+                text-align: center;
+            }
+            & a {
+                @include text;
+            }
+        }
+    }
+}
